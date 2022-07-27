@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper .upper {
+  background-color: #aa09d9;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .upper .label {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.wrapper .upper .input_wrapper {
+  position: relative;
+}
+.wrapper .upper .input_wrapper input {
+  height: 35px;
+  border: none;
+  width: 200px;
+  padding-left: 15px;
+  padding-right: 50px;
+  outline: none;
+}
+.wrapper .upper .input_wrapper input::-moz-placeholder {
+  color: #3f6ec2;
+}
+.wrapper .upper .input_wrapper input:-ms-input-placeholder {
+  color: #3f6ec2;
+}
+.wrapper .upper .input_wrapper input::placeholder {
+  color: #3f6ec2;
+}
+.wrapper .upper .input_wrapper button {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #ace3fd;
+  color: #0d31a0;
+  padding: 10px;
+}
+.wrapper .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .dropdown .list_item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddfdfd;
+  color: #090e41;
+  width: 250px;
+  padding: 20px 10px;
+}/*# sourceMappingURL=style.css.map */
