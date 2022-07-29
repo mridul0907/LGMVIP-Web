@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  &__header {
+    background-color: #46d7ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 44px;
+    font-weight: 600;
+  }
+  &__container {
+    border-top: 2px solid #c9c9c9;
+    display: flex;
+    .form {
+      width: 49.5%;
+      padding-left: 75px;
+      padding-top: 75px;
+      .feild {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        label {
+          min-width: 25%;
+        }
+        .radio_box {
+          margin: 10px 0;
+          input {
+            margin-right: 10px;
+          }
+        }
+        .skill_box {
+          label {
+            margin-right: 20px;
+            input {
+              margin-right: 20px;
+            }
+          }
+        }
+        .input_feild {
+          border: 2px solid grey;
+          height: 40px;
+          border-radius: 10px;
+          width: 230px;
+          padding: 0px 10px;
+        }
+      }
+      .button_wrapper {
+        display: flex;
+        .enroll {
+          outline: none;
+          border: 2px solid #0086fa;
+          background: transparent;
+          color: #0086fa;
+          border-radius: 10px;
+          font-weight: 600;
+          padding: 15px 20px;
+          font-size: 16px;
+          margin-right: 18%;
+          &:hover {
+            background: #0086fa;
+            color: white;
+            cursor: pointer;
+          }
+        }
+        .enroll:disabled{
+            border: 2px solid grey;
+            color: grey;
+            &:hover{
+                background: transparent;
+            }
+        }
+        .clear {
+          outline: none;
+          border: 2px solid #d92942;
+          background: transparent;
+          color: #d92942;
+          border-radius: 10px;
+          font-weight: 600;
+          padding: 15px 20px;
+          font-size: 16px;
+          &:hover {
+            background: #d92942;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .seperator {
+      border: 2px solid #46d7ae;
+      border-radius: 5px;
+      height: 65vh;
+      margin-top: 8vh;
+    }
+    .student_card_box {
+      width: 49.5%;
+      height: 95vh;
+      overflow: auto;
+      .header {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 600;
+      }
+      .cards {
+        margin: 0 10%;
+        &__header {
+          background-color: #a6c940;
+          display: flex;
+          font-weight: 600;
+          .description {
+            width: 70%;
+            font-size: 17px;
+            color: white;
+            padding: 10px;
+          }
+          .image {
+            width: 30%;
+            border-left: 2px solid #a4b469;
+            font-size: 17px;
+            color: white;
+            padding: 10px;
+          }
+        }
+        .card {
+          border: 2px solid #a4b469;
+          background: whitesmoke;
+          display: flex;
+          .left {
+            padding: 10px;
+            width: 70%;
+            font-size: 17px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name {
+              text-transform: capitalize;
+              font-weight: 700;
+            }
+            .gender {
+              text-transform: capitalize;
+            }
+            .skills {
+              display: flex;
+            }
+          }
+          .right {
+            width: 30%;
+            border-left: 2px solid #a4b469;
+            padding: 10px;
+            .image_box {
+              width: 100%;
+              height: 135px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
